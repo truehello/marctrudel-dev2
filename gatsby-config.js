@@ -1,10 +1,11 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby-MDX + Netlify-CMS Starter`,
-    description: `Starter for Gatsby-MDX + Netlify CMS`,
-    author: `@renvrant`,
+    title: `Marc Trudel - Full Stack Developer`,
+    description: `Marc Trudel is a full-stack developer and designer in Victoria, British Columbia, Canada.`,
+    author: `@marctrudel`,
   },
   plugins: [
+    `gatsby-plugin-postcss`,
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
