@@ -8,7 +8,7 @@ export const CallToAction = ({ url, children, align, bgColor, ...other }) => {
     borderRadius: "5px",
     textDecoration: "none",
     display: "inline-block",
-    padding: "1.5em 2.5em",
+    padding: "1em 2em",
     backgroundColor: bgColor ? bgColor : "rebeccaPurple",
     color: "white",
   }
