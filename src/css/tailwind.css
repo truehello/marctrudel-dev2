@@ -1,17 +1,22 @@
 @tailwind base;
+body {
+    @apply bg-gray-100 font-sans leading-normal tracking-normal min-h-screen flex flex-col ;
+}
 
 h1 {
-  @apply text-2xl;
+  @apply font-bold break-normal text-gray-900 pt-6 pb-2 text-3xl;
 }
 h2 {
-  @apply text-xl;
+  @apply text-2xl;
 }
 h3 {
-  @apply text-lg;
+  @apply text-xl;
 }
-a {
-  @apply text-blue-600 underline;
+
+#gatsby-focus-wrapper {
+    @apply min-h-screen flex flex-col;
 }
+
 
 @tailwind components;
 

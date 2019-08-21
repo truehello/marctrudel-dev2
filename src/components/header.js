@@ -9,8 +9,8 @@ export const Header = ({ siteTitle }) => (
       <nav className="fixed w-full z-10 top-0">
         <div className="w-full md:max-w-4xl mx-auto flex flex-wrap items-center justify-between mt-0 py-3">
           <div className="pl-4">
-            <h1 className="text-gray-900 text-base no-underline hover:no-underline font-extrabold text-xl">
-              <Link to="/">{siteTitle}</Link>
+            <h1>
+              <Link className="text-gray-900 text-base no-underline hover:no-underline font-extrabold text-xl" to="/">{siteTitle}</Link>
             </h1>
           </div>
 
@@ -36,24 +36,12 @@ export const Header = ({ siteTitle }) => (
           >
             <ul className="list-reset lg:flex justify-end flex-1 items-center">
               <li className="mr-3">
-                <a
-                  className="inline-block py-2 px-4 text-gray-900 font-bold no-underline"
-                  href="#"
-                >
-                  Active
-                </a>
+                <Link className="inline-block text-gray-600 no-underline hover:text-gray-900 hover:text-underline py-2 px-4" to="/articles">Articles</Link>
               </li>
-              <li className="mr-3">
-                <a
-                  className="inline-block text-gray-600 no-underline hover:text-gray-900 hover:text-underline py-2 px-4"
-                  href="#"
-                >
-                  link
-                </a>
-              </li>
+              
               <li className="mr-3">
                 
-                <Link className="inline-block text-gray-600 no-underline hover:text-gray-900 hover:text-underline py-2 px-4" to="/">Contact</Link>
+                <Link className="inline-block text-gray-600 no-underline hover:text-gray-900 hover:text-underline py-2 px-4" to="/contact">Contact</Link>
               </li>
             </ul>
           </div>

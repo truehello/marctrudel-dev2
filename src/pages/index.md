@@ -1,9 +1,9 @@
 ---
-title: Home Page
+title: Marc Trudel is a full-stack developer and designer in Victoria, British Columbia, Canada.
 templateKey: "home-page"
 sections:
   - body: >-
-      Extended from the Gatsby starter, this starter aims to provide an example for using Gatsby-MDX with Netlify.
+      He usually spends his time trying to figure out what the heck he's doing, and playing around with code.
 
       ## Features
 

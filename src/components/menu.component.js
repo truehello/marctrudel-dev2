@@ -17,7 +17,7 @@ export const query = graphql`
   }
 `
 
-export const Menu = () => (
+const Menu = () => (
   <StaticQuery
     query={query}
     render={data => {
@@ -34,3 +34,5 @@ export const Menu = () => (
     }}
   />
 )
+
+export default Menu

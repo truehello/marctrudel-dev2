@@ -21,17 +21,17 @@ export const AppLayout = ({ children, pageContext }) => (
       <>
         <Header siteTitle={data.site.siteMetadata.title} />
         {/* <Menu /> */}
-        <div>
-        <main  className="container w-full md:max-w-3xl mx-auto pt-20">
+       
+        <main  className="container w-full md:max-w-3xl mx-auto pt-20 flex-grow ">
         {children}
         </main>
 
-          <footer className="bg-white border-t border-gray-400 shadow">
+          <footer className="text-right mt-12">
             © {new Date().getFullYear()}, Built with
             {` `}
             <a href="https://www.gatsbyjs.org">Gatsby</a>
           </footer>
-        </div>
+        
       </>
     )}
     }
