@@ -7,10 +7,16 @@ h1 {
   @apply font-bold break-normal text-gray-900 pt-6 pb-2 text-3xl;
 }
 h2 {
-  @apply text-2xl;
+  @apply text-2xl pt-4 pb-2;
 }
 h3 {
-  @apply text-xl;
+  @apply text-xl pt-4 pb-2;
+}
+pre {
+    @apply bg-gray-900 rounded text-white font-mono text-base p-2 
+}
+code {
+    @apply break-words whitespace-pre-wrap
 }
 
 #gatsby-focus-wrapper {
