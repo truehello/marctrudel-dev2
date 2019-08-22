@@ -1,6 +1,6 @@
 @tailwind base;
 body {
-    @apply bg-gray-100 font-sans leading-normal tracking-normal min-h-screen flex flex-col ;
+    @apply bg-gray-100 font-sans leading-normal tracking-normal min-h-screen flex flex-col;
 }
 
 h1 {
@@ -11,6 +11,9 @@ h2 {
 }
 h3 {
   @apply text-xl pt-4 pb-2;
+}
+p{
+    @apply py-6 font-serif;
 }
 pre {
     @apply bg-gray-900 rounded text-white font-mono text-base p-2 
