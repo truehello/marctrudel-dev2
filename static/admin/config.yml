@@ -1,6 +1,5 @@
 backend:
-  name: github
-  repo: truehello/marctrudel-dev
+  name: git-gateway
   branch: master
 
 publish_mode: editorial_workflow
