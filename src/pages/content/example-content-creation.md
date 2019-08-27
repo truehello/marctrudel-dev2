@@ -1,9 +1,12 @@
 ---
-title: Example Content Creation
-description: CMS Made
+title: Basic Windows CMD Commands
+description: Collection of command line codes for windows
 ---
-## Example
+## Collection of command line codes for windows
 
-This page was created through the CMS.
+* **CD** - Shows the name of or changes to a current directory  cd ../  cd/documents/subfolder
+* **DIR** - Displays a list of files and sub-directories in a directory.
+* **REN** - Renames a file or files.
+* **RMDIR -** Removes a directory.  rmdir /q /s 
 
 [Back Home](/)
