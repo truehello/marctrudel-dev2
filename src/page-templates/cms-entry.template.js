@@ -3,7 +3,7 @@ import React from "react"
 import HomePage from "./home-page.template"
 import DefaultPage from "./default-page.template"
 import NotFoundPage from "./not-found.template"
-import { AppLayout } from "../app-layout.component"
+import Layout from "../components/Layout"
 import { safelyGetFrontMatter } from "../cms"
 
 // Extend this template map to allow your users to choose a page layout from the CMS
@@ -19,9 +19,11 @@ const CMSTemplate = props => {
   const { templateKey } = safelyGetFrontMatter(pageContext)
   const Page = componentTemplateMap[templateKey]
   return (
-    <AppLayout>
+    //<AppLayout>
+    <Layout>
       {Page ? <Page {...props} /> : <DefaultPage {...props} />}
-    </AppLayout>
+      </Layout>
+    //</AppLayout>
   )
 }
 

@@ -1,12 +1,14 @@
 import React from "react"
 
-import AppLayout from "../app-layout.component"
+import Layout from "../components/Layout"
 import NotFoundTemplate from "../page-templates/not-found.template"
 
 const NotFoundPage = () => (
-  <AppLayout>
+  //<AppLayout>
+  <Layout>
     <NotFoundTemplate />
-  </AppLayout>
+  </Layout>
+  //</AppLayout>
 )
 
 export default NotFoundPage

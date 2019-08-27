@@ -22,7 +22,7 @@ export const HomePageTemplate = ({ title, sections }) => (
             scope={CMS_SCOPE}
             components={CMS_COMPONENTS}
           />
-          <hr />
+          
         </section>
       )
     })}

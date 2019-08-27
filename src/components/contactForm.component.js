@@ -55,7 +55,7 @@ const ContactForm = props => {
             </div>
 
             <button
-              className="flex flex-col mb-4 items-center w-full block bg-green-500 hover:bg-green-700 font-bold text-white py-2 px-4 rounded"
+              className="btn btn-primary flex flex-col mb-4 items-center w-full block"
               type="submit"
             >
               Send

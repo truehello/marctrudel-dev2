@@ -1,10 +1,39 @@
 @tailwind base;
+
+:root {
+  --primary-color:#F6E05E;
+  --secondary-color: #B7791F;
+  --font-color: #2D3748;
+  --font-color-secondary: #F7FAFC;
+  --bg-color: #F7FAFC;
+  --bg-color-secondary:#4A5568;
+ 
+}
+
+[data-theme="dark-mode"] {
+  --primary-color: #F6AD55;
+  --secondary-color: #9C4221;
+  --font-color: #F7FAFC;
+  --font-color-secondary: #1A202C;
+  --bg-color: #1A202C;
+  --bg-color-secondary: #EDF2F7;
+ 
+}
+
+@import url("https://fonts.googleapis.com/css?family=BioRhyme|Space+Mono&display=swap");
+
 body {
-    @apply bg-gray-100 font-sans leading-normal tracking-normal min-h-screen flex flex-col;
+    @apply leading-normal tracking-normal min-h-screen flex flex-col;
+}
+body{
+  background: var(--bg-color);
+  color: var(--font-color);
+  font-family: "BioRhyme", serif;
+  transition: all 2.5s ease-in-out;
 }
 
 h1 {
-  @apply font-bold break-normal text-gray-900 pt-6 pb-2 text-3xl;
+  @apply font-bold break-normal pt-6 pb-2 text-3xl;
 }
 h2 {
   @apply text-2xl pt-4 pb-2;
@@ -12,11 +41,24 @@ h2 {
 h3 {
   @apply text-xl pt-4 pb-2;
 }
+
+
 p{
     @apply py-6 font-serif;
 }
+
+p{
+  font-family: "Space Mono", monospace;
+}
+
 pre {
-    @apply bg-gray-900 rounded text-white font-mono text-base p-2 
+    @apply rounded font-mono text-base p-2 
+}
+
+pre {
+  background: var(--bg-color-secondary);
+  color: var(--font-color-secondary);
+  transition: all 2.5s ease-in-out;
 }
 code {
     @apply break-words whitespace-pre-wrap
@@ -25,6 +67,62 @@ code {
 #gatsby-focus-wrapper {
     @apply min-h-screen flex flex-col;
 }
+
+.btn {
+  @apply font-semibold py-2 px-4 rounded;
+}
+.btn-primary {
+  background: var(--primary-color);
+  color: var(--font-color);
+  transition: all 2.5s ease-in-out;
+}
+.btn-primary:hover {
+  background: var(--secondary-color);
+
+}
+
+.moon,
+.sun {
+  width: 34px;
+  cursor: pointer;
+  transition: 0.5s all ease-in-out;
+}
+
+.sun:hover {
+  animation: sun_rotate 1s infinite;
+}
+.moon:hover {
+  transform: scale(1.1);
+}
+
+/* Animations */
+
+@keyframes sun_rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+
+.dark-mode-toggle button {
+  background: none;
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+.dark-mode-toggle button:hover,
+.dark-mode-toggle button:focus,
+.dark-mode-toggle button:active {
+  background: none;
+  border: none;
+  outline: none;
+}
+
 
 
 @tailwind components;

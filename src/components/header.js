@@ -1,16 +1,16 @@
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
-//import { Menu } from "./components"
+import DarkModeToggle from "./DarkModeToggle"
 
 export const Header = ({ siteTitle }) => (
-  <header classNameName="fixed w-full z-10 top-0">
+  <header className="fixed w-full z-10 top-0">
     <div>
       <nav className="fixed w-full z-10 top-0">
         <div className="w-full md:max-w-4xl mx-auto flex flex-wrap items-center justify-between mt-0 py-3">
           <div className="pl-4">
             <h1>
-              <Link className="text-gray-900 text-base no-underline hover:no-underline font-extrabold text-xl" to="/">{siteTitle}</Link>
+              <Link className="text-base no-underline hover:no-underline font-extrabold text-xl" to="/">{siteTitle}</Link>
             </h1>
           </div>
 
@@ -42,6 +42,9 @@ export const Header = ({ siteTitle }) => (
               <li className="mr-3">
                 
                 <Link className="inline-block text-gray-600 no-underline hover:text-gray-900 hover:text-underline py-2 px-4" to="/contact">Contact</Link>
+              </li>
+              <li>
+                <DarkModeToggle />
               </li>
             </ul>
           </div>
