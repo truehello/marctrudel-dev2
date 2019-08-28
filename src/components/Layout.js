@@ -3,6 +3,7 @@ import PropTypes from "prop-types"
 import { StaticQuery, graphql } from "gatsby"
 
 import { Header } from "../components/header"
+import Footer from "../components/footer"
 //import Transition from "../components/transitions";
 
 // Global application wrapper
@@ -13,6 +14,7 @@ export const Layout = ({ children, location }) => (
         site {
           siteMetadata {
             title
+            author
           }
         }
       }
@@ -26,11 +28,7 @@ export const Layout = ({ children, location }) => (
             {children}
           </main>
 
-          <footer className="text-right mt-12">
-            © {new Date().getFullYear()}, Built with
-            {` `}
-            <a href="https://www.gatsbyjs.org">Gatsby</a>
-          </footer>
+          <Footer siteAuthor={data.site.siteMetadata.author} />
         </>
       )
     }}

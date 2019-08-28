@@ -7,14 +7,9 @@ import { useEffect, useState } from "react"
     // State and setter for matched value
     const [value, setValue] = useState(defaultValue)
 
-    //const mediaQueryLists = queries
-   // if (typeof window !== 'undefined') {
- 
     //const mediaQueryLists = queries.map(q => window.matchMedia(q))
+    // return null if window is not defined such as on SSR
     const mediaQueryLists = typeof window !== `undefined` ? queries.map(q => window.matchMedia(q)) : null
-   // }
-    // Array containing a media query list for each query
-  
   
     // State update function
     const getValue = () => {

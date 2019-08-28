@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: `Marc Trudel - Full Stack Developer`,
     description: `Marc Trudel is a full-stack developer and designer in Victoria, British Columbia, Canada.`,
-    author: `@marctrudel`,
+    author: `Marc Trudel`,
   },
   plugins: [
     `gatsby-plugin-postcss`,
