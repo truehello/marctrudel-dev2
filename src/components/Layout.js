@@ -24,7 +24,7 @@ export const Layout = ({ children, location }) => (
         <>
           <Header siteTitle={data.site.siteMetadata.title} />
 
-          <main className="container w-full md:max-w-3xl mx-auto pt-20 flex-grow">
+          <main className="container w-full md:max-w-3xl mx-auto pt-20 px-4 lg:px-0 flex-grow">
             {children}
           </main>
 

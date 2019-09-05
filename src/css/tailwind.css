@@ -68,6 +68,12 @@ code {
     @apply min-h-screen flex flex-col;
 }
 
+#nav-content{
+    background: var(--bg-color);
+    color: var(--font-color);
+    transition: all 2.5s ease-in-out;
+}
+
 .btn {
   @apply font-semibold py-2 px-4 rounded;
 }
