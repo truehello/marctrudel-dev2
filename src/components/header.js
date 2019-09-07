@@ -12,7 +12,7 @@ export const Header = ({ siteTitle }) => {
         <nav className="fixed w-full z-10 top-0">
           <div className="w-full md:max-w-4xl mx-auto flex flex-wrap items-center justify-between mt-0 py-3">
             <div className="pl-4">
-              <h1 className="pt-0">
+              <h1 className="logo pt-0">
                 <Link
                   className="text-base no-underline hover:no-underline font-extrabold lg:text-xl"
                   to="/"
@@ -42,27 +42,27 @@ export const Header = ({ siteTitle }) => {
             <div
               // className={`${ isExpanded ? `block` : `hidden` } w-full flex-grow lg:flex lg:items-center lg:w-auto hidden lg:block mt-2 lg:mt-0 bg-gray-100 md:bg-transparent z-20`}
               id="nav-content"
-              className={`${ isExpanded ? `block` : `hidden` } w-full block flex-grow lg:flex lg:items-center lg:w-auto`}
+              className={`${ isExpanded ? `block` : `hidden` } w-full flex flex-col lg:flex-row items-center lg:w-auto lg:flex pb-2`}
             >
-              <ul className="list-reset lg:flex justify-end flex-1 items-center">
-                <li className="mr-3">
+              <ul className="flex flex-col items-center lg:flex-row">
+                <li className="lg:mr-3">
                   <Link
-                    className="inline-block text-gray-600 no-underline hover:text-gray-900 hover:text-underline py-2 px-4"
+                    className="inline-block no-underline hover:text-underline py-2 px-4"
                     to="/articles"
                   >
                     Articles
                   </Link>
                 </li>
 
-                <li className="mr-3">
+                <li className="lg:mr-3">
                   <Link
-                    className="inline-block text-gray-600 no-underline hover:text-gray-900 hover:text-underline py-2 px-4"
+                    className="inline-block no-underline hover:text-underline py-2 px-4"
                     to="/contact"
                   >
                     Contact
                   </Link>
                 </li>
-                <li>
+                <li className="lg:mr-3">
                   <DarkModeToggle />
                 </li>
               </ul>

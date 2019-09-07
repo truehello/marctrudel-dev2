@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Marc Trudel - Full Stack Developer`,
+    title: `Marc Trudel`,
     description: `Marc Trudel is a full-stack developer and designer in Victoria, British Columbia, Canada.`,
     author: `Marc Trudel`,
   },

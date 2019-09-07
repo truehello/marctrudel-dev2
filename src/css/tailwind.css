@@ -1,8 +1,8 @@
 @tailwind base;
 
 :root {
-  --primary-color:#F6E05E;
-  --secondary-color: #B7791F;
+  --primary-color: #F6AD55;
+  --secondary-color: #9C4221;
   --font-color: #2D3748;
   --font-color-secondary: #F7FAFC;
   --bg-color: #F7FAFC;
@@ -11,14 +11,17 @@
 }
 
 [data-theme="dark-mode"] {
-  --primary-color: #F6AD55;
-  --secondary-color: #9C4221;
+  
+  --primary-color:#F6E05E;
+  --secondary-color: #B7791F;
   --font-color: #F7FAFC;
   --font-color-secondary: #1A202C;
   --bg-color: #1A202C;
   --bg-color-secondary: #EDF2F7;
  
 }
+
+
 
 @import url("https://fonts.googleapis.com/css?family=BioRhyme|Space+Mono&display=swap");
 
@@ -72,6 +75,11 @@ code {
     background: var(--bg-color);
     color: var(--font-color);
     transition: all 2.5s ease-in-out;
+}
+
+.logo{
+  color: var(--secondary-color); 
+  transition: color 2.5s ease-in-out;
 }
 
 .btn {
