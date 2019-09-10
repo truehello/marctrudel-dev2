@@ -33,6 +33,7 @@ body{
   color: var(--font-color);
   font-family: "BioRhyme", serif;
   transition: all 2.5s ease-in-out;
+  transition-property: background, color
 }
 
 h1 {
@@ -71,7 +72,7 @@ code {
     @apply min-h-screen flex flex-col;
 }
 
-#nav-content{
+#nav-content, .container{
     background: var(--bg-color);
     color: var(--font-color);
     transition: all 2.5s ease-in-out;
@@ -89,6 +90,7 @@ code {
   background: var(--primary-color);
   color: var(--font-color);
   transition: all 2.5s ease-in-out;
+  transition-property: background, color
 }
 .btn-primary:hover {
   background: var(--secondary-color);
