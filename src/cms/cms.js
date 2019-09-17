@@ -4,7 +4,7 @@ import { HomePagePreview, DefaultPagePreview } from "./preview-templates"
 import { ctaEditorConfig } from "./editor-components"
 
 // Not reliably loaded by registerPreviewStyle, so import directly
-import "../app.css"
+//import "../app.css"
 
 // Add Previews
 CMS.registerPreviewTemplate("home", HomePagePreview)

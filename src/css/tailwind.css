@@ -32,7 +32,7 @@ body{
   background: var(--bg-color);
   color: var(--font-color);
   font-family: "BioRhyme", serif;
-  transition: all 2.5s ease-in-out;
+  transition: all 1.5s ease-in-out;
   transition-property: background, color
 }
 
@@ -62,7 +62,7 @@ pre {
 pre {
   background: var(--bg-color-secondary);
   color: var(--font-color-secondary);
-  transition: all 2.5s ease-in-out;
+  transition: all 1.5s ease-in-out;
 }
 code {
     @apply break-words whitespace-pre-wrap
@@ -75,12 +75,12 @@ code {
 #nav-content, .container{
     background: var(--bg-color);
     color: var(--font-color);
-    transition: all 2.5s ease-in-out;
+    transition: all 1.5s ease-in-out;
 }
 
 .logo{
   color: var(--secondary-color); 
-  transition: color 2.5s ease-in-out;
+  transition: color 1.5s ease-in-out;
 }
 
 .btn {
@@ -89,7 +89,7 @@ code {
 .btn-primary {
   background: var(--primary-color);
   color: var(--font-color);
-  transition: all 2.5s ease-in-out;
+  transition: all 1.5s ease-in-out;
   transition-property: background, color
 }
 .btn-primary:hover {
@@ -148,7 +148,8 @@ code {
   outline: none;
 }
 
-
+/* for Netlify CMS */
+#nc-root{font-family: sans-serif;}
 
 @tailwind components;
 
