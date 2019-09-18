@@ -25,7 +25,7 @@ const ArticleList = () => (
       return (
         <ul>
           {menu.map((item, i) => (
-            <li key={i} className="rounded overflow-hidden shadow-lg mb-4 p-4">
+            <li key={i} className="card rounded overflow-hidden shadow-lg mb-4 p-4">
               <a href={item.url}>{item.text}</a>
             </li>
           ))}

@@ -4,9 +4,9 @@
   --primary-color: #F6AD55;
   --secondary-color: #9C4221;
   --font-color: #2D3748;
-  --font-color-secondary: #F7FAFC;
+  --font-color-secondary: #1A202C;
   --bg-color: #F7FAFC;
-  --bg-color-secondary:#4A5568;
+  --bg-color-secondary:#EDF2F7;
  
 }
 
@@ -15,9 +15,9 @@
   --primary-color:#F6E05E;
   --secondary-color: #B7791F;
   --font-color: #F7FAFC;
-  --font-color-secondary: #1A202C;
+  --font-color-secondary: #EDF2F7;
   --bg-color: #1A202C;
-  --bg-color-secondary: #EDF2F7;
+  --bg-color-secondary: #4A5568;
  
 }
 
@@ -33,33 +33,37 @@ body{
   color: var(--font-color);
   font-family: "BioRhyme", serif;
   transition: all 1.5s ease-in-out;
-  transition-property: background, color
+  transition-property: background-color, color
 }
 
-h1 {
+h1{
   @apply font-bold break-normal pt-6 pb-2 text-3xl;
 }
-h2 {
+h2{
   @apply text-2xl pt-4 pb-2;
 }
-h3 {
+h3{
   @apply text-xl pt-4 pb-2;
 }
 
-
+a{
+  @apply underline;
+  transition: color 1s ease-in-out;
+}
+a:hover{
+  @apply no-underline;
+  color: var(--secondary-color);
+}
 p{
     @apply py-6 font-serif;
+    font-family: "Space Mono", monospace;
 }
 
-p{
-  font-family: "Space Mono", monospace;
-}
-
-pre {
+pre{
     @apply rounded font-mono text-base p-2 
 }
 
-pre {
+pre{
   background: var(--bg-color-secondary);
   color: var(--font-color-secondary);
   transition: all 1.5s ease-in-out;
@@ -68,15 +72,30 @@ code {
     @apply break-words whitespace-pre-wrap
 }
 
+.card{
+  background: var(--bg-color-secondary);
+  transition: background 1.5s ease-in-out;
+}
+
 #gatsby-focus-wrapper {
     @apply min-h-screen flex flex-col;
 }
 
-#nav-content, .container{
+#nav-content{
+  background: var(--bg-color);
+  color: var(--font-color);
+  transition: all 1.5s ease-in-out;
+}
+
+
+
+/*
+.container{
     background: var(--bg-color);
     color: var(--font-color);
     transition: all 1.5s ease-in-out;
 }
+*/
 
 .logo{
   color: var(--secondary-color); 
