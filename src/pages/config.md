@@ -4,6 +4,8 @@ desc: Gatsby-MDX + Netlify CMS Starter
 menu_nav:
   - text: Tailwindcss and Gatsby
     url: /tailwindcss-gatsby
+  - text: Tailwindcss and Nextjs
+    url: /tailwindcss-nextjs
   - text: Responsive Menu with Tailwindcss and Gatsby
     url: /add-responsive-navigation-menu-to-gatsby-tailwind-css-site
   - text: Basic Windows CMD commands
