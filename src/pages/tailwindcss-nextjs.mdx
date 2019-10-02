@@ -2,22 +2,19 @@ import { CallToAction } from "../components"
 
 # Setting up Tailwindcss In A Next.js Project
 
+[Tailwindcss](https://www.tailwindcss.com)
 
-[Tailwindcss](https://www.tailwindcss.com) 
-
-In this guide, we'll walk through how to install  [Tailwindcss](https://www.tailwindcss.com)  in a new [Next.js](https://nextjs.org)  project.
+In this guide, we'll walk through how to install [Tailwindcss](https://www.tailwindcss.com) in a new [Next.js](https://nextjs.org) project.
 To start off you will create a new nextjs project
+
 ```
 npm init next-app tailwind-next-example
 
 ```
 
-
 ## Step 1: Install the dependencies
 
-
 To install the plugin, use your favorite package manager.
-
 
 ```
 npm install tailwindcss autoprefixer postcss-loader --save-dev
@@ -29,10 +26,9 @@ and also install the next-css plugin:
 npm install @zeit/next-css
 ```
 
-
 ## Step 3: Configure the build pipeline
-you will need to create a postcss.config.js file in the root of you app
 
+you will need to create a postcss.config.js file in the root of you app
 
 Open up your gatsby-config.js, and add 'gatsby-plugin-postcss' to the plugins array.
 
@@ -45,7 +41,7 @@ module.exports = {
 };
 ```
 
-and then you will also need a next.config.js 
+and then you will also need a next.config.js
 
 ```
 const withCSS = require('@zeit/next-css');
@@ -53,7 +49,8 @@ const withCSS = require('@zeit/next-css');
 module.exports = withCSS({});
 
 ```
-**  Note October 1 2019, there is a current bug in next.js loader so use the following ~~~~ hack if you encounter it **
+
+** Note October 1 2019, there is a current bug in next.js loader so use the following ~~~~ hack if you encounter it **
 
 ```
 const withCSS = require('@zeit/next-css');
@@ -82,8 +79,8 @@ module.exports = withCSS({
 
 ```
 
-
 ## Step 3: Add Tailwindcss to CSS file
+
 Everything should be ready to go, all we need to do now is to actually use Tailwind within our CSS! First, create a global.css file. I put mine at styles/tailwind.css. Then, add the following Tailwind directives to your new file:
 
 // tailwind.css
@@ -96,12 +93,12 @@ Everything should be ready to go, all we need to do now is to actually use Tailw
 @tailwind utilities;
 ```
 
-
 ## Step 4: Import css into the project
 
 Now before we configure PostCSS to use Tailwind, we need to install it.
 
 ** Using NPM **
+
 ```
   import React from 'react'
   import Link from 'next/link'
@@ -116,19 +113,19 @@ Now before we configure PostCSS to use Tailwind, we need to install it.
       </Head>
 ```
 
+## Step 5: Have fun
 
-
-## Step 5: Have fun 
-Eventually, you may wish to import your CSS in a custom <App> component to ensure it gets loaded on every page.
+Eventually, you may wish to import your CSS in a custom component to ensure it gets loaded on every page.
 
 You can now start using Tailwind CSS utilities in your className attributes!
 
 
 
-
 ## Credits
+
 [statickit](https://statickit.com/guides/next-js-tailwind) Most of this is a modification of that list of steps
 
 
-
-<CallToAction url="/" align="center">Home</CallToAction>
+<CallToAction url="/" align="center">
+  Home
+</CallToAction> 
