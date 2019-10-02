@@ -41,7 +41,7 @@ const HomePage = ({ pageContext }) => {
 
       <h2 className="pt-20">Projects</h2>
       <div class="flex mb-4 -mx-4">
-        <div className="card w-full w-1/2:lg max-w-sm rounded overflow-hidden shadow-lg px-4">
+        <div className="card w-full w-1/2:lg max-w-sm rounded overflow-hidden shadow-lg px-4 mx-4">
           {/* <img className="w-full" src="images/gatsby-astronaut.png" alt="Sunset in the mountains" /> */}
           <div className="px-6 py-4">
             <div className="font-bold text-xl mb-2">
@@ -75,7 +75,7 @@ const HomePage = ({ pageContext }) => {
           </div>
         </div>
 
-        <div className="card w-full w-1/2:lg max-w-sm rounded overflow-hidden shadow-lg px-4">
+        <div className="card w-full w-1/2:lg max-w-sm rounded overflow-hidden shadow-lg px-4 mx-4">
           {/* <img className="w-full" src="images/gatsby-astronaut.png" alt="Sunset in the mountains" /> */}
           <div className="px-6 py-4">
             <div className="font-bold text-xl mb-2">Image Search Engine</div>
