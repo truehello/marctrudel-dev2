@@ -55,7 +55,7 @@ const HomePage = ({ pageContext }) => {
             <a
               href="https://extraextra.netlify.com"
               target="_blank"
-              rel="noopener norefferer"
+              rel="noopener noreferrer"
               title="link to ExtraExtra.netlify.com"
             >
               <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">
@@ -65,7 +65,7 @@ const HomePage = ({ pageContext }) => {
             <a
               href="https://github.com/truehello/react-news"
               target="_blank"
-              rel="noopener norefferer"
+              rel="noopener noreferrer"
               title="link to GitHub Repo"
             >
               <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700">
@@ -87,7 +87,7 @@ const HomePage = ({ pageContext }) => {
             <a
               href="https://react-image-search.netlify.com"
               target="_blank"
-              rel="noopener norefferer"
+              rel="noopener noreferrer"
               title="link to react-image-search.netlify.com"
             >
               <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">
@@ -97,7 +97,7 @@ const HomePage = ({ pageContext }) => {
             <a
               href="https://github.com/truehello/react-news"
               target="_blank"
-              rel="noopener norefferer"
+              rel="noopener noreferrer"
               title="link to GitHub Repo"
             >
               <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700">

@@ -26,7 +26,11 @@
 @import url("https://fonts.googleapis.com/css?family=BioRhyme|Space+Mono&display=swap");
 
 body {
-    @apply leading-normal tracking-normal min-h-screen flex flex-col;
+    @apply leading-normal;
+    @apply tracking-normal;
+    @apply min-h-screen;
+    @apply flex;
+    @apply flex-col;
 }
 body{
   background: var(--bg-color);
@@ -37,13 +41,21 @@ body{
 }
 
 h1{
-  @apply font-bold break-normal pt-6 pb-2 text-3xl;
+  @apply font-bold;
+  @apply break-normal;
+  @apply pt-6;
+  @apply pb-2;
+  @apply text-3xl;
 }
 h2{
-  @apply text-2xl pt-4 pb-2;
+  @apply text-2xl;
+  @apply pt-4;
+  @apply pb-2;
 }
 h3{
-  @apply text-xl pt-4 pb-2;
+  @apply text-xl;
+  @apply pt-4;
+  @apply pb-2;
 }
 
 a{
@@ -55,12 +67,16 @@ a:hover{
   color: var(--secondary-color);
 }
 p{
-    @apply py-6 font-serif;
+    @apply py-6;
+    @apply font-serif;
     font-family: "Space Mono", monospace;
 }
 
 pre{
-    @apply rounded font-mono text-base p-2 
+    @apply rounded;
+    @apply font-mono;
+    @apply text-base;
+    @apply p-2;
 }
 
 pre{
@@ -68,8 +84,21 @@ pre{
   color: var(--font-color-secondary);
   transition: all 1.5s ease-in-out;
 }
-code {
-    @apply break-words whitespace-pre-wrap
+code{
+    @apply break-words; 
+    @apply whitespace-pre-wrap;
+}
+
+tr{
+  @apply py-4;
+  @apply px-6;
+  @apply font-medium;
+  @apply border-b;
+  @apply border-gray-500;
+}
+
+table{
+  border: solid 1px #2D3748;
 }
 
 .card{
@@ -78,7 +107,9 @@ code {
 }
 
 #gatsby-focus-wrapper {
-    @apply min-h-screen flex flex-col;
+    @apply min-h-screen;
+    @apply flex;
+    @apply flex-col;
 }
 
 #nav-content{
@@ -103,7 +134,10 @@ code {
 }
 
 .btn {
-  @apply font-semibold py-2 px-4 rounded;
+  @apply font-semibold;
+  @apply py-2;
+  @apply px-4;
+  @apply rounded;
 }
 .btn-primary {
   background: var(--primary-color);
@@ -166,6 +200,7 @@ code {
   border: none;
   outline: none;
 }
+
 
 /* for Netlify CMS */
 #nc-root{font-family: sans-serif;}
