@@ -8,7 +8,7 @@ menu_nav:
     url: /tailwindcss-nextjs
   - text: Responsive Menu with Tailwindcss and Gatsby
     url: /add-responsive-navigation-menu-to-gatsby-tailwind-css-site
-   - text: Memoization in React with useMemo hook
+  - text: Memoization in React with useMemo hook
     url: /content/react-use-memo
   - text: Basic Windows CMD commands
     url: /content/basic-windows-commands
