@@ -58,9 +58,9 @@ yarn add tailwindcss --dev
 
 ## Step 5: Generate Tailwind Config File
 To configure Tailwind, we'll need to add a Tailwind configuration file. Luckily, Tailwind has a built-in script to do this. Just run the following command (again, in your project's root directory).
-
+```
 npx tailwind init tailwind.config.js
-
+```
 This will create a tailwind.config.js file containing Tailwind's default configuration.
 
 ## Step 6: Configure PostCSS
@@ -71,7 +71,7 @@ Okay, we've installed and configured Tailwind, now back to our PostCSS config. W
 const tailwind = require('tailwindcss')
 
 module.exports = () => ({
-    plugins: [tailwind('./tailwind.js')],
+    plugins: [tailwind('./tailwind.config.js')],
 })
 
 ```
