@@ -12,6 +12,8 @@ menu_nav:
     url: /content/react-use-memo
   - text: Basic Windows CMD commands
     url: /content/basic-windows-commands
+  - text: Console Debugging Crutches
+    url: /content/console-debugging-tips 
   - text: Setting Up Multisite Wordpress on AWS
     url: /wordpress-aws
 ---
