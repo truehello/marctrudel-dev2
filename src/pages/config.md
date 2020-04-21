@@ -15,7 +15,9 @@ menu_nav:
   - text: Console Debugging Crutches
     url: /content/console-debugging-tips 
   - text: Basic Git Commands
-    url: /content/basic-git 
+    url: /content/basic-git
+  - text: Gatsby Image CSS Position Absolute
+    url: /content/gatsby-image-css 
   - text: Setting Up Multisite Wordpress on AWS
     url: /wordpress-aws
 ---
