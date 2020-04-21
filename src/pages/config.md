@@ -14,6 +14,8 @@ menu_nav:
     url: /content/basic-windows-commands
   - text: Console Debugging Crutches
     url: /content/console-debugging-tips 
+  - text: Basic Git Commands
+    url: /content/basic-git 
   - text: Setting Up Multisite Wordpress on AWS
     url: /wordpress-aws
 ---
