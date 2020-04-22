@@ -3,12 +3,12 @@ title: Tailwindcss In NextJS
 description: Setting up Tailwindcss In A NextJS Project
 featuredImgURL: https://unsplash.it/1310?space
 featuredImgAlt: nextjs tailwind image
+slug: tailwind-nextjs
 keywords: NextJS, Tailwind, React
 ---
 
-import { CallToAction } from "../components"
+//import { CallToAction } from "../components"
 
-# Setting up Tailwindcss In A Next.js Project
 
 [Tailwindcss](https://www.tailwindcss.com)
 

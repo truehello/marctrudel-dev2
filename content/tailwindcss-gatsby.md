@@ -3,12 +3,13 @@ title: Setting up Tailwindcss In A Gatsby Project
 description: Collection of basic git commands
 featuredImgURL: https://unsplash.it/1309?space
 featuredImgAlt: gatsby tailwind image
+slug: tailwind-gatsby
 keywords: Gatsby, Tailwind, React
 ---
 
-import { CallToAction } from "../components"
+//import { CallToAction } from "../components"
 
-# Setting up Tailwindcss In A Gatsby Project
+
 
 
 [Tailwindcss](https://www.tailwindcss.com) is a CSS utility framework, and it's quickly become my favorite way to build an interface. Oftentimes, the hardest part of trying out a new framework, package, or language is getting set up.

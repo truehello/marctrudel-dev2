@@ -92,3 +92,4 @@ const detailsQuery = graphql`
     }
   }
 `
+export default SEO;

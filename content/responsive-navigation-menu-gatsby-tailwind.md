@@ -1,6 +1,14 @@
-import { CallToAction } from "../components"
+---
+title: Tailwindcss Responsive Menu in Gatsby
+description:  Getting Tailwindcss Responsive Menu to work on Gatsby site
+featuredImgURL: https://unsplash.it/1313?space
+featuredImgAlt: gatsby tailwind image
+slug: tailwind-gatsby-menu
+keywords: Gatsby, Tailwind, React
+---
 
-# Getting Tailwindcss Responsive Menu to work on Gatsby site
+//import { CallToAction } from "../components"
+
 
 After installing Tailwind CSS on your GatsbyJS, you will want to make the menu sytem responsive for mobile devices. 
 Though Tailwind makes this pretty easy to scaffold out, you will need to make some tweaks to your Gatsby React jsx in order for a hamburget menu to be functional. 

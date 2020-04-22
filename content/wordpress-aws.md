@@ -3,12 +3,10 @@ title: Wordpress Multisite AWS
 description: Setting up a Multisite Wordpress Server on AWS
 featuredImgURL: https://unsplash.it/1312?space
 featuredImgAlt: wordpress AWS multisite image
+slug: aws-wordpress-multisite
 keywords: AWS, Wordpress
 ---
 
-import { CallToAction } from "../components"
-
-# Setting up a Multisite Wordpress Server on AWS
 
 
 [Tailwindcss](https://www.tailwindcss.com) is a CSS utility framework, and it's quickly become my favorite way to build an interface. Oftentimes, the hardest part of trying out a new framework, package, or language is getting set up.
