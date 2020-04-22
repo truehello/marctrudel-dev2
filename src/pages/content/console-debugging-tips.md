@@ -1,6 +1,9 @@
 ---
 title: Console Debugging Tricks and Resources
 description: A personal collection of helpful console debugging tips
+featuredImgURL: https://unsplash.it/1306?space
+featuredImgAlt: Console Debugging Tricks image
+keywords: javascript debugging
 ---
 ## Console Debugging Tricks and Resources
 

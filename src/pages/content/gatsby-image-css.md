@@ -1,6 +1,9 @@
 ---
 title: Gatsby Image CSS Absolute
 description: Tip about Gatsby Image CSS
+featuredImgURL: https://unsplash.it/1307?space
+featuredImgAlt: gatsby css image
+keywords: Gatsby CSS
 ---
 ## Gatsby Image CSS Position:Absolute 
 

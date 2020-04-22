@@ -1,6 +1,9 @@
 ---
 title: Basic Windows CMD Commands
 description: Collection of command line codes for windows
+featuredImgURL: https://unsplash.it/1305?space
+featuredImgAlt: basic windows comands image
+keywords: windows command-line
 ---
 ## Collection of command line codes for windows
 

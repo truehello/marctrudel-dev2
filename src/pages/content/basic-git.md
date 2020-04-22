@@ -1,6 +1,9 @@
 ---
 title: Basic Git Commands
 description: Collection of basic git commands
+featuredImgURL: https://unsplash.it/1304?space
+featuredImgAlt: basic git comands image
+keywords: git
 ---
 ## Collection of basic git commands
 
