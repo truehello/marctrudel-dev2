@@ -1,7 +1,7 @@
 ---
 title: Gatsby Image CSS Absolute
 description: Tip about Gatsby Image CSS
-featuredImgURL: https://unsplash.it/1307?random
+featuredImgURL: https://source.unsplash.com/featured/?space
 featuredImgAlt: gatsby css image
 slug: gatsby-image
 keywords: Gatsby CSS

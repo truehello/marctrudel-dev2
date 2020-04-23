@@ -1,7 +1,7 @@
 ---
 title: Memoization in React
 description: A Quick overview of memoization and the useMemo React hook
-featuredImgURL: https://unsplash.it/1308?space
+featuredImgURL: https://source.unsplash.com/featured/?space,milkyway
 featuredImgAlt: use memo image
 slug: react-memo
 keywords: React Memo

@@ -1,7 +1,7 @@
 ---
 title: Wordpress Multisite AWS
 description: Setting up a Multisite Wordpress Server on AWS
-featuredImgURL: https://unsplash.it/1312?space
+featuredImgURL: https://source.unsplash.com/featured/?space,astronaut
 featuredImgAlt: wordpress AWS multisite image
 slug: aws-wordpress-multisite
 keywords: AWS, Wordpress

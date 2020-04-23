@@ -1,7 +1,7 @@
 ---
 title: Setting up Tailwindcss In A Gatsby Project
 description: Collection of basic git commands
-featuredImgURL: https://unsplash.it/1309?space
+featuredImgURL: https://source.unsplash.com/featured/?space,aurora
 featuredImgAlt: gatsby tailwind image
 slug: tailwind-gatsby
 keywords: Gatsby, Tailwind, React

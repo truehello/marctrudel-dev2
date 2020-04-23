@@ -1,7 +1,7 @@
 ---
 title: Tailwindcss In NextJS
 description: Setting up Tailwindcss In A NextJS Project
-featuredImgURL: https://unsplash.it/1310?space
+featuredImgURL: https://source.unsplash.com/featured/?space,moon
 featuredImgAlt: nextjs tailwind image
 slug: tailwind-nextjs
 keywords: NextJS, Tailwind, React

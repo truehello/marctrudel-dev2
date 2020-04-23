@@ -1,7 +1,7 @@
 ---
 title: Tailwindcss Responsive Menu in Gatsby
 description:  Getting Tailwindcss Responsive Menu to work on Gatsby site
-featuredImgURL: https://unsplash.it/1313?space
+featuredImgURL: https://source.unsplash.com/featured/?space,mars
 featuredImgAlt: gatsby tailwind image
 slug: tailwind-gatsby-menu
 keywords: Gatsby, Tailwind, React
