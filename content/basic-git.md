@@ -9,17 +9,17 @@ keywords: git
 ## Collection of basic git commands
 
 
-**git init** create a new repository
-**git add** add files to branch "git add ." adds all files
-**git commit -m "note describing commit** commits files to branch. Best to use good description of work done
-**git push** pushes to remote repository
-**git status** show staus of all branches in ropository
-**git branch** lists all branches
+**git init** create a new repository<br/>
+**git add** add files to branch "git add ." adds all files<br/>
+**git commit -m "note describing commit** commits files to branch. Best to use good description of work done<br/>
+**git push** pushes to remote repository<br/>
+**git status** show staus of all branches in ropository<br/>
+**git branch** lists all branches<br/>
 
 ### make a new branch
-**git checkout -b new branch name** creates a new branch and switches to using it
+**git checkout -b new branch name** creates a new branch and switches to using it<br/>
 
 ### merge branch
-**git checkout master** switch to branch the you want to merge into
-**git merge branch name** merges branch name into master
-**git push** push to remote repository
+**git checkout master** switch to branch the you want to merge into<br/>
+**git merge branch name** merges branch name into master<br/>
+**git push** push to remote repository<br/>
