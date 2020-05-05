@@ -7,8 +7,6 @@ slug: tailwind-nextjs
 keywords: NextJS, Tailwind, React
 ---
 
-//import { CallToAction } from "../components"
-
 
 [Tailwindcss](https://www.tailwindcss.com)
 
@@ -133,7 +131,3 @@ You can now start using Tailwind CSS utilities in your className attributes!
 
 [statickit](https://statickit.com/guides/next-js-tailwind) Most of this is a modification of that list of steps
 
-
-<CallToAction url="/" align="center">
-  Home
-</CallToAction> 

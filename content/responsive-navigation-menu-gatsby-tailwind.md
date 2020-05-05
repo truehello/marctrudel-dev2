@@ -7,7 +7,6 @@ slug: tailwind-gatsby-menu
 keywords: Gatsby, Tailwind, React
 ---
 
-//import { CallToAction } from "../components"
 
 
 After installing Tailwind CSS on your GatsbyJS, you will want to make the menu sytem responsive for mobile devices. 
@@ -108,5 +107,3 @@ Thanks to [ericbusch.net](https://ericbusch.net/add-responsive-navigation-menu-t
 
 [Tailwindcss](https://www.tailwindcss.com)
 
-
-<CallToAction url="/" align="center">Home</CallToAction> 

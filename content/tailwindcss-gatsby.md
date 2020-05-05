@@ -7,9 +7,6 @@ slug: tailwind-gatsby
 keywords: Gatsby, Tailwind, React
 ---
 
-//import { CallToAction } from "../components"
-
-
 
 
 [Tailwindcss](https://www.tailwindcss.com) is a CSS utility framework, and it's quickly become my favorite way to build an interface. Oftentimes, the hardest part of trying out a new framework, package, or language is getting set up.
@@ -156,6 +153,3 @@ module.exports = {
 ## Credits
 [Dev.to Jake Dohn](https://dev.to/jakedohm_34/using-tailwind-with-gatsby-js-10fj) Most of this is a modification of that list of steps
 
-
-
-<CallToAction url="/" align="center">Home</CallToAction>
