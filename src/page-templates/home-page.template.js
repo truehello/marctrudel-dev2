@@ -109,7 +109,7 @@ const HomePage = ({ pageContext }) => {
               </span>
             </a>
             <a
-              href="https://github.com/truehello/react-news"
+              href="https://github.com/truehello/react-image-search"
               target="_blank"
               rel="noopener noreferrer"
               title="link to GitHub Repo"
