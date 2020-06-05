@@ -50,7 +50,7 @@ fixing screwups. git superpower is it gives you the ability to go back in time w
 
 **git reset --hard SHA**  use this to go back to the SHA (Secure Hash Algorithm) that is given to each of your git commits. 
 
-### How do I find the <SHA> to roll back to? 
+### How do I find the SHA to roll back to? 
 usually you need to go back to a point in time where you remembered life being good and the code functioning as expected. 
 **git log** By default, with no arguments, git log lists the commits made in that repository in reverse chronological order; that is, the most recent commits show up first.
 
