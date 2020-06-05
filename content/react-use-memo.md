@@ -77,11 +77,13 @@ export default function SimpleStateHooks() {
 ```
 With the useMemo hook, and renders only occur if the value of the state changes. If it remains the same useMemo uses the cached value and none of the components rerender. Since the parameter passed the last time is the same as the parameter for the next execution, the memoized data is received rather than getting data from the re-execution of the given function.
 
-Obviously, preventing any unnecessary renders will improve the performance of your React site or app.
+Preventing any unnecessary renders will improve the performance of your React site or app.
 
 ## Credits
 
 [Mayak Gupta](https://medium.com/better-programming/usememo-hook-in-react-d8d0eda6598a) Most of this is a distillation of this article
+
+[Dmitri Pavlutin](https://dmitripavlutin.com/use-react-memo-wisely/) Use React Memo wisely
 
 
 [Back Home](/)
