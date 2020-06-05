@@ -348,7 +348,7 @@ Import your weather.js component to a page and you are ready to display the weat
 
 To summarize, we have a component that loads into a page or another component and when it is loaded makes a call out to the serverless function. The function is able to get the originating IP from the event header. It then fetches location data from a geolocation api. When that data is retrieved, the object is parsed for the information needed by the weather API. The weather API is then fetched and the weather data is returned to the front-end client as a JSON object. That information can then be destructured and displayed on your app. 
 
-
+Source files: [Github](https://github.com/truehello/gatsby-netlify-weather)
 
 ### Resources for this Article
 
