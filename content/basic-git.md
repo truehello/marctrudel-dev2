@@ -16,12 +16,12 @@ keywords: git
 
 **git push** pushes to remote repository
 
-**git status** show status of all branches in ropository
+**git status** show status of all branches in repository
 
 **git branch** lists all branches
 
 ### make a new branch
-**git checkout -b <new branch name>** creates a new branch and switches to using it
+**git checkout -b new branch name** creates a new branch and switches to using it
 
 
 ### merge branch
@@ -32,9 +32,9 @@ keywords: git
 **git push** push to remote repository
 
 ### delete a branch
-**git branch -d <branch>** The -d option will delete the branch only if it has already been pushed and merged with the remote branch. local branch only
+**git branch -d branch** The -d option will delete the branch only if it has already been pushed and merged with the remote branch. local branch only
 
-**git branch -D <branch>** Use -D instead if you want to force the branch to be deleted, even if it hasn't been pushed or merged yet. local branch only
+**git branch -D branch** Use -D instead if you want to force the branch to be deleted, even if it hasn't been pushed or merged yet. local branch only
 
 **git push origin --delete remoteBranchName** delete the remote branch
 
@@ -43,12 +43,12 @@ keywords: git
 
 
 ### Rebase
-**git rebase <branch>** rebasing is changing the base of your branch from one commit to another making it appear as if you'd created your branch from a different commit. Internally, Git accomplishes this by creating new commits and applying them to the specified base.
+**git rebase branch** rebasing is changing the base of your branch from one commit to another making it appear as if you'd created your branch from a different commit. Internally, Git accomplishes this by creating new commits and applying them to the specified base.
 
 ### Magic Time Machine
 fixing screwups. git superpower is it gives you the ability to go back in time when life was good and your code actually worked. to do this you need to go back to a time when you know your code worked. 
 
-**git reset --hard <SHA>**  use this to go back to the SHA (Secure Hash Algorithm) that is given to each of your git commits. 
+**git reset --hard SHA**  use this to go back to the SHA (Secure Hash Algorithm) that is given to each of your git commits. 
 
 ### How do I find the <SHA> to roll back to? 
 usually you need to go back to a point in time where you remembered life being good and the code functioning as expected. 
