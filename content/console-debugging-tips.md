@@ -18,7 +18,7 @@ this will output verbose and readable verison of your object to help view what i
 
 example
 ```
-console.log(JSON.stringify(data))
+console.log(JSON.stringify(data, null, 2))
 
 ```
 
