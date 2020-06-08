@@ -45,7 +45,7 @@ const HomePage = ({ pageContext }) => {
         <div className="flex flex-col justify-between p-6 rounded-md h-64 max-w-md relative overflow-hidden m-4 shadow-md hover:shadow-xl no-underline bg-gray-500 transition-shadow duration-300">
           <img
             src="https://unsplash.it/1352?space"
-            alt="React News Image"
+            alt="React News"
             className="absolute object-cover top-0 left-0 w-full h-full"
           />
 
@@ -85,7 +85,7 @@ const HomePage = ({ pageContext }) => {
         <div className="flex flex-col justify-between p-6 rounded-md h-64 max-w-md relative overflow-hidden m-4 shadow-md hover:shadow-xl no-underline bg-gray-500 transition-shadow duration-300">
           <img
             src="https://unsplash.it/1350?space"
-            alt="React News Image"
+            alt="Unsplash App"
             className="absolute object-cover top-0 left-0 w-full h-full"
           />
 

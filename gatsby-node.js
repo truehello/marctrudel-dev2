@@ -53,7 +53,7 @@ exports.createPages = async ({ graphql, actions }) => {
     //then query for each image in the folders to create a page for that image. 
     const result = await graphql(`
       query {
-        allMarkdownRemark {
+        allMarkdownRemark(sort: {order: ASC, fields: id}) {
             edges {
               node {
                 frontmatter {

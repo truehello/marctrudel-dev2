@@ -13,8 +13,8 @@ const ContactForm = props => {
             action="/thanks/"
           >
             {/* You still need to add the hidden input with the form name to your JSX form to work with netlify and gatsby*/}
-            <input type="hidden" name="form-name" value="contact" />
-            <input type="hidden" name="bot-field" />
+            <input type="hidden" name="form-name" value="contact" aria-hidden="true" />
+            <input type="hidden" name="bot-field" aria-hidden="true" />
 
             <div className="flex flex-col mb-4">
               <label className="block uppercase tracking-wide text-sm">
@@ -24,6 +24,7 @@ const ContactForm = props => {
                   placeholder="Fred Flintstone"
                   type="text"
                   name="name"
+                  aria-label="Name"
                 />
               </label>
             </div>
@@ -36,6 +37,7 @@ const ContactForm = props => {
                   placeholder="fred@slateindustries.com"
                   type="email"
                   name="email"
+                  aria-label="email"
                   required
                 />
               </label>
@@ -49,6 +51,7 @@ const ContactForm = props => {
                   placeholder="Yabba Dabba Do"
                   type="text"
                   name="message"
+                  aria-label="message"
                   required
                 />
               </label>
@@ -57,6 +60,7 @@ const ContactForm = props => {
             <button
               className="btn btn-primary flex flex-col mb-4 items-center w-full block"
               type="submit"
+              aria-label="Submit"
             >
               Send
             </button>
