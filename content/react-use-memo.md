@@ -86,4 +86,3 @@ Preventing any unnecessary renders will improve the performance of your React si
 [Dmitri Pavlutin](https://dmitripavlutin.com/use-react-memo-wisely/) Use React Memo wisely
 
 
-[Back Home](/)

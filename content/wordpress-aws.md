@@ -112,6 +112,3 @@ import "./src/css/tailwind.css"
 ## Credits
 [Dev.to Jake Dohn](https://dev.to/jakedohm_34/using-tailwind-with-gatsby-js-10fj) Most of this is a modification of that list of steps
 
-
-
-<CallToAction url="/" align="center">Home</CallToAction>
