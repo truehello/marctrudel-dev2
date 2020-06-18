@@ -89,17 +89,21 @@ code{
     @apply whitespace-pre-wrap;
 }
 
+th{
+  @apply py-6
+}
 tr{
   @apply py-4;
   @apply px-6;
   @apply font-medium;
-  @apply border-b;
+
+  @apply border-b-2;
   @apply border-gray-500;
 }
-
-table{
-  border: solid 1px #2D3748;
+td{
+  @apply py-6
 }
+
 
 .card{
   background: var(--bg-color-secondary);
