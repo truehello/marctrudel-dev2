@@ -117,7 +117,7 @@ td{
 }
 
 #nav-content{
-  background: var(--bg-color);
+   background: var(--bg-color); 
   color: var(--font-color);
   transition: all 1.5s ease-in-out;
 }

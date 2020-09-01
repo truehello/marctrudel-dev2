@@ -40,9 +40,9 @@ export const Header = ({ siteTitle }) => {
             </div>
 
             <div
-              // className={`${ isExpanded ? `block` : `hidden` } w-full flex-grow lg:flex lg:items-center lg:w-auto hidden lg:block mt-2 lg:mt-0 bg-gray-100 md:bg-transparent z-20`}
+  
               id="nav-content"
-              className={`${ isExpanded ? `block` : `hidden` } w-full flex flex-col lg:flex-row items-center lg:w-auto lg:flex pb-2`}
+              className={`${ isExpanded ? `block bg-opacity-100` : `hidden bg-opacity-0` } w-full flex flex-col lg:flex-row items-center lg:w-auto lg:flex pb-2`}
             >
               <ul className="flex flex-col items-center lg:flex-row">
                 <li className="lg:mr-3">
