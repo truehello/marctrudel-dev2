@@ -45,6 +45,15 @@ export const Header = ({ siteTitle }) => {
               className={`${ isExpanded ? `block bg-opacity-100` : `hidden bg-opacity-0` } w-full flex flex-col lg:flex-row items-center lg:w-auto lg:flex pb-2`}
             >
               <ul className="flex flex-col items-center lg:flex-row">
+              <li className="lg:mr-3">
+                  <Link
+                    className="inline-block no-underline hover:text-underline py-2 px-4"
+                    to="/about"
+                  >
+                    About
+                  </Link>
+                </li>
+                
                 <li className="lg:mr-3">
                   <Link
                     className="inline-block no-underline hover:text-underline py-2 px-4"

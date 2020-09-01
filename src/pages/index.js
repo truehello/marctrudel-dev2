@@ -3,7 +3,7 @@ import React from "react"
 import Layout from "../components/Layout"
 import ContactForm from "../components/contactForm.component"
 
-const Articles = () => (
+const Home = () => (
   <Layout>
     <h1>
       I am a full-stack developer and designer in Victoria, British Columbia,
@@ -111,4 +111,4 @@ const Articles = () => (
   </Layout>
 )
 
-export default Articles
+export default Home
