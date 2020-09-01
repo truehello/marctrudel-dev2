@@ -1,6 +1,7 @@
 import React from "react"
 
 import Layout from "../components/Layout"
+import ContactForm from "../components/contactForm.component"
 
 const Articles = () => (
   <Layout>
@@ -104,6 +105,9 @@ const Articles = () => (
         </div>
       </div>
     </div>
+
+    <h2 className="pt-20">Get In Touch</h2>
+      <ContactForm />
   </Layout>
 )
 
