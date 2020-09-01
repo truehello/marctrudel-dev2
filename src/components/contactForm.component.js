@@ -58,7 +58,7 @@ const ContactForm = props => {
             </div>
 
             <button
-              className="btn btn-primary flex flex-col mb-4 items-center w-full block"
+              className="btn btn-primary flex flex-col mb-4 items-center w-full"
               type="submit"
               aria-label="Submit"
             >
