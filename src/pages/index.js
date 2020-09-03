@@ -27,7 +27,7 @@ const Home = () => (
     <div className="grid grid-cols-2 gap-2">
       <div className="flex flex-col justify-between p-6 rounded-md h-64 max-w-md relative overflow-hidden m-4 shadow-md hover:shadow-xl no-underline bg-gray-500 transition-shadow duration-300">
         <img
-          src="https://unsplash.it/1352?space"
+          src="https://source.unsplash.com/featured/500?space,background"
           alt="React News"
           className="absolute object-cover top-0 left-0 w-full h-full"
         />
@@ -67,7 +67,7 @@ const Home = () => (
 
       <div className="flex flex-col justify-between p-6 rounded-md h-64 max-w-md relative overflow-hidden m-4 shadow-md hover:shadow-xl no-underline bg-gray-500 transition-shadow duration-300">
         <img
-          src="https://unsplash.it/1350?space"
+          src="https://source.unsplash.com/featured/502?space,background"
           alt="Unsplash App"
           className="absolute object-cover top-0 left-0 w-full h-full"
         />

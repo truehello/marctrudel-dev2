@@ -8,7 +8,7 @@ const About = () => (
     {/* <SEO title="About | Marc Trudel Full Stack Developer Victoria BC" /> */}
 
     <img
-      src="https://source.unsplash.com/featured/?space,mars"
+      src="https://source.unsplash.com/featured/1260?space,mars"
       alt="unsplash by "
       className="w-full h-64 mb-16 rounded-t-full"
     />
@@ -52,7 +52,7 @@ const About = () => (
     </p>
 
     <img
-      src="https://source.unsplash.com/featured/?space,mars"
+      src="https://source.unsplash.com/featured/1260?space,mars"
       alt="unsplash by "
       className="w-full h-64 mt-16 rounded-b-full"
     />
