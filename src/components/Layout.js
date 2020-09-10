@@ -5,7 +5,8 @@ import { StaticQuery, graphql } from "gatsby"
 
 import { Header } from "../components/header"
 import Footer from "../components/footer"
-
+import { defineCustomElements as deckDeckGoHighlightElement } from '@deckdeckgo/highlight-code/dist/loader';
+deckDeckGoHighlightElement();
 
 // const particlesOptions = {
 //   particles: {
