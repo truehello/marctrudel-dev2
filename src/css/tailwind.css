@@ -87,10 +87,11 @@ pre{
 code{
     @apply break-words; 
     @apply whitespace-pre-wrap;
+    @apply p-4;
 }
 
 th{
-  @apply py-6
+  @apply py-6;
 }
 tr{
   @apply py-4;
@@ -142,15 +143,17 @@ td{
   @apply py-2;
   @apply px-4;
   @apply rounded;
+  @apply no-underline;
 }
 .btn-primary {
   background: var(--primary-color);
-  color: var(--font-color);
-  transition: all 1.5s ease-in-out;
+  color: var(--font-color-seconday);
+  transition: all 0.5s ease-in-out;
   transition-property: background, color
 }
 .btn-primary:hover {
   background: var(--secondary-color);
+  color: var(--font-color);
 
 }
 

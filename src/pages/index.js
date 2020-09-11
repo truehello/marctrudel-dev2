@@ -5,7 +5,7 @@ import ContactForm from "../components/contactForm.component"
 
 const Home = () => (
   <Layout>
-    <h1>
+    <h1 className="text-2xl md:text-4xl">
       I am a full-stack developer and designer in Victoria, British Columbia,
       Canada.
     </h1>
@@ -22,9 +22,9 @@ const Home = () => (
       </a>{" "}
     </p>
 
-    <h2 className="pt-20">Projects</h2>
+    <h2 className="py-10 text-center md:text-left">Projects</h2>
 
-    <div className="grid grid-cols-2 gap-2">
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
       <div className="flex flex-col justify-between p-6 rounded-md h-64 max-w-md relative overflow-hidden m-4 shadow-md hover:shadow-xl no-underline bg-gray-500 transition-shadow duration-300">
         <img
           src="https://source.unsplash.com/featured/500?space,background"
@@ -106,7 +106,7 @@ const Home = () => (
       </div>
     </div>
 
-    <h2 className="pt-20">Get In Touch</h2>
+    <h2 className="py-10 text-center md:text-left">Get In Touch</h2>
       <ContactForm />
   </Layout>
 )

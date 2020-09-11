@@ -3,7 +3,7 @@ import React from "react"
 import Layout from "../components/Layout"
 import ContactForm from "../components/contactForm.component"
 
-const NotFoundPage = () => (
+const Contact = () => (
   <Layout>
     <img
       src="https://source.unsplash.com/featured/1250?space,background"
@@ -20,4 +20,4 @@ const NotFoundPage = () => (
   </Layout>
 )
 
-export default NotFoundPage
+export default Contact
