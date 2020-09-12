@@ -20,8 +20,8 @@ function useDarkMode() {
   // Fire off effect that add/removes dark mode class
   useEffect(
     () => {
-     
-      const element = window.document.body;
+      const element = typeof window !== `undefined` ? window.document.body : null
+      //const element = window.document.body;
       if (enabled) {
         element.setAttribute('data-theme', 'dark-mode');
       } else {
