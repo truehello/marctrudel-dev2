@@ -1,15 +1,15 @@
 import React from "react"
 import { Router } from "@reach/router"
-import { login, logout, isAuthenticated, getProfile } from "../utils/auth"
+//import { login, logout, isAuthenticated, getProfile } from "../utils/auth"
 import { Link } from "gatsby"
 
 import Layout from "../components/Layout"
 import ArticleListPrivate from "../components/articleListPrivate"
 
-const Home = ({ user }) => {
+const Home = () => {
   return (
    <>   
-  <p>Hi, {user.name ? user.name : "friend"}!</p>
+  {/* <p>Hi, {user.name ? user.name : "friend"}!</p> */}
     <ArticleListPrivate />
   </>
   )
@@ -19,12 +19,12 @@ const Settings = () => <p>Coming Soon...</p>
 const Secrets = () => <p>Shh, don't ask. Don't tell.</p>
 
 const Account = () => {
-  if (!isAuthenticated()) {
-    login()
-    return <p>Redirecting to login...</p>
-  }
+  // if (!isAuthenticated()) {
+  //   login()
+  //   return <p>Redirecting to login...</p>
+  // }
 
-  const user = getProfile()
+ // const user = getProfile()
 
   return (
     <Layout>
@@ -39,7 +39,7 @@ const Account = () => {
         <Link to="/account">Private Articles</Link>{" "}
         <Link to="/account/settings">Settings</Link>{" "}
         <Link to="/account/secrets">Secrets</Link>{" "}
-        <a
+        {/* <a
           href="#logout"
           className="btn btn-primary items-center"
           onClick={e => {
@@ -48,10 +48,10 @@ const Account = () => {
           }}
         >
           Log Out
-        </a>
+        </a> */}
       </nav>
       <Router>
-      <Home path="/account/" user={user} />
+      <Home path="/account/" />
         <Settings path="/account/settings" />
         <Secrets path="/account/secrets" />
       </Router>
