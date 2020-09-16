@@ -9,19 +9,27 @@ import { useEffect, useState } from "react"
 
     //const mediaQueryLists = queries.map(q => window.matchMedia(q))
     // return null if window is not defined such as on SSR
-    const mediaQueryLists = typeof window !== `undefined` ? queries.map(q => window.matchMedia(q)) : null
+    //const mediaQueryLists = typeof window !== `undefined` ? queries.map(q => window.matchMedia(q)) : null
   
     // State update function
-    const getValue = () => {
-      // Get index of first media query that matches
-      const index = mediaQueryLists.findIndex(mql => mql.matches)
-      // Return related value or defaultValue if none
-      return typeof values[index] !== "undefined" ? values[index] : defaultValue
-    }
+    // const getValue = () => {
+    //   // Get index of first media query that matches
+    //   const index = mediaQueryLists.findIndex(mql => mql.matches)
+    //   // Return related value or defaultValue if none
+    //   return typeof values[index] !== "undefined" ? values[index] : defaultValue
+    // }
 
     useEffect(
       () => {
         // Set the initial value
+        const mediaQueryLists = typeof window !== `undefined` ? queries.map(q => window.matchMedia(q)) : null
+        const getValue = () => {
+          // Get index of first media query that matches
+          const index = mediaQueryLists.findIndex(mql => mql.matches)
+          // Return related value or defaultValue if none
+          return typeof values[index] !== "undefined" ? values[index] : defaultValue
+        }
+
         setValue(getValue)
 
         // Event listener callback
