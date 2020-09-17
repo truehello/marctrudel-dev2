@@ -7,7 +7,9 @@
   --font-color-secondary: #1A202C;
   --bg-color: #F7FAFC;
   --bg-color-secondary:#EDF2F7;
- 
+  --deckgo-highlight-code-padding: 1rem;
+  
+  --deckgo-highlight-code-ubuntu-background: #282a36;
 }
 
 [data-theme="dark-mode"] {
@@ -18,6 +20,8 @@
   --font-color-secondary: #EDF2F7;
   --bg-color: #1A202C;
   --bg-color-secondary: #2D3748;
+  --deckgo-highlight-code-ubuntu-background: rgba(56, 4, 40, 0.9);
+
  
 }
 
@@ -84,11 +88,11 @@ pre{
   color: var(--font-color-secondary);
   transition: all 1.5s ease-in-out;
 }
-code{
+/* code{
     @apply break-words; 
     @apply whitespace-pre-wrap;
     @apply p-4;
-}
+} */
 
 th{
   @apply py-6;
@@ -157,6 +161,10 @@ td{
 
 }
 
+code{
+  @apply p-4
+}
+
 .moon,
 .sun {
   width: 34px;
@@ -171,14 +179,14 @@ td{
   transform: scale(1.1);
 }
 
-.particles {
+/* .particles {
   position: fixed;
   right: 0;
   bottom: 0;
   left: 0;
   z-index: -1;
   height:100vh;
-}
+} */
 
 /* Animations */
 
