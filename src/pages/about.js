@@ -1,10 +1,10 @@
 import React from "react"
 import Link from "gatsby-link"
-import Layout from "../components/Layout"
+//import Layout from "../components/Layout"
 //import SEO from "../components/seo"
 
 const About = () => (
-  <Layout>
+  <>
     {/* <SEO title="About | Marc Trudel Full Stack Developer Victoria BC" /> */}
 
     <img
@@ -56,7 +56,7 @@ const About = () => (
       alt="unsplash by "
       className="w-full h-64 mt-16 rounded-b-full"
     />
-  </Layout>
+  </>
 )
 
 export default About

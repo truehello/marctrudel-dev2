@@ -1,7 +1,7 @@
 import React from "react";
 import { graphql } from "gatsby";
 import Img from "gatsby-image";
-import Layout from "../components/Layout";
+//import Layout from "../components/Layout";
 import SEO from "../components/seo";
 
 // eslint-disable-next-line react/prop-types
@@ -10,7 +10,7 @@ const MaterialsPagesTemplate = ({ data }) => {
   //console.log(JSON.stringify(content.edges[0].node.frontmatter.title))
 
   return (
-    <Layout>
+    <>
       <SEO title={content.edges[0].node.frontmatter.keywords} />
 
       <Img
@@ -25,7 +25,7 @@ const MaterialsPagesTemplate = ({ data }) => {
           __html: content.edges[0].node.html,
         }}
       />
-    </Layout>
+    </>
   );
 };
 

@@ -1,10 +1,10 @@
 import React from "react"
 
-import Layout from "../components/Layout"
+
 import ContactForm from "../components/contactForm.component"
 
 const Contact = () => (
-  <Layout>
+  <>
     <img
       src="https://source.unsplash.com/featured/1250?space,background"
       alt="unsplash by "
@@ -17,7 +17,7 @@ const Contact = () => (
       alt="unsplash by "
       className="w-full h-64 mt-16 rounded-b-full"
     />
-  </Layout>
+  </>
 )
 
 export default Contact

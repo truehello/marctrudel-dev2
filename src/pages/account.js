@@ -3,7 +3,7 @@ import { Router } from "@reach/router"
 //import { login, logout, isAuthenticated, getProfile } from "../utils/auth"
 import { Link } from "gatsby"
 
-import Layout from "../components/Layout"
+
 import ArticleListPrivate from "../components/articleListPrivate"
 
 const Home = () => {
@@ -27,7 +27,7 @@ const Account = () => {
  // const user = getProfile()
 
   return (
-    <Layout>
+    <>
       <img
         src="https://source.unsplash.com/featured/1260?space,background"
         alt="unsplash by "
@@ -60,7 +60,7 @@ const Account = () => {
         alt="unsplash by "
         className="w-full h-64 mt-16 rounded-b-full"
       />
-    </Layout>
+    </>
   )
 }
 

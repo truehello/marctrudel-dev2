@@ -1,10 +1,10 @@
 import React from "react"
 
-import Layout from "../components/Layout"
+//import Layout from "../components/Layout"
 import ContactForm from "../components/contactForm.component"
 
 const Home = () => (
-  <Layout>
+ <>
     <h1 className="text-2xl md:text-4xl">
       I am a full-stack developer and designer in Victoria, British Columbia,
       Canada.
@@ -108,7 +108,7 @@ const Home = () => (
 
     <h2 className="py-10 text-center md:text-left">Get In Touch</h2>
       <ContactForm />
-  </Layout>
+ </>
 )
 
 export default Home

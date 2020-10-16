@@ -5,7 +5,7 @@ featuredImgURL: https://source.unsplash.com/featured/?space,saturn
 featuredImgAlt: tailwind group utility
 slug: tailwind-group
 keywords: Tailwind CSS
----
+--- 
 ## Tailwind Group Hover
 
 What do you do if you want to add a more complex nested hover effect on an element while using tailwindcss? Though tailwind makes it super simple to add hover effects to each element of the DOM, sometimes, you want to update styles for multiple children elements when hovering over a parent. The group-hover class in Tailwind lets you do just that in a very elegant way!

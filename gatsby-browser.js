@@ -1,43 +1,29 @@
-/**
- * Implement Gatsby's Browser APIs in this file.
- *
- * See: https://www.gatsbyjs.org/docs/browser-apis/
- */
 
-// You can delete this file if you're not using it
-//import "./src/app.css"
-
-
-//import React from "react"
-//import { silentAuth } from "./src/utils/auth"
 
 import "./src/css/tailwind.css"
 
-// class SessionCheck extends React.Component {
-//   constructor(props) {
-//     super(props)
-//     this.state = {
-//       loading: true,
-//     }
-//   }
+import React from "react";
+import Layout from "./src/components/Layout";
 
-//   handleCheckSession = () => {
-//     this.setState({ loading: false })
-//   }
+const transitionDelay = 500;
 
-//   componentDidMount() {
-//     silentAuth(this.handleCheckSession)
-//   }
+export const wrapPageElement = ({ element, props }) => {
+  return <Layout {...props}>{element}</Layout>;
+};
 
-//   render() {
-//     return (
-//       this.state.loading === false && (
-//         <React.Fragment>{this.props.children}</React.Fragment>
-//       )
-//     )
-//   }
-// }
+export const shouldUpdateScroll = ({
+  routerProps: { location },
+  getSavedScrollPosition
+}) => {
+  if (location.action === "PUSH") {
+    window.setTimeout(() => window.scrollTo(0, 0), transitionDelay);
+  } else {
+    const savedPosition = getSavedScrollPosition(location);
+    window.setTimeout(
+      () => window.scrollTo(...(savedPosition || [0, 0])),
+      transitionDelay
+    );
+  }
+  return false;
+};
 
-// export const wrapRootElement = ({ element }) => {
-//   return <SessionCheck>{element}</SessionCheck>
-// }
