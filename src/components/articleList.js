@@ -3,6 +3,7 @@ import React from "react"
 import { useStaticQuery, graphql, Link } from "gatsby"
 import Img from "gatsby-image"
 
+
 const ArticlesList = () => {
   const data = useStaticQuery(graphql`
     query ArticlesQuery {
@@ -66,17 +67,23 @@ const ArticlesList = () => {
 
   return (
     <section className="pb-12">
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
+      <div
+       
+        className="grid grid-cols-1 md:grid-cols-2 gap-2"
+      >
         {data.allFile.edges.map(edge => (
           //  const keywords = edge.node.frontmatter.keywords
           //  console.log(keywords)
           <Link
+          
             key={edge.node.id}
             to={`/articles/${edge.node.childMarkdownRemark.frontmatter.slug}`}
             className="flex flex-col justify-between p-6 rounded-md h-64 max-w-md relative overflow-hidden m-4 shadow-md hover:shadow-xl no-underline bg-gray-500 transition-shadow duration-300"
           >
             <Img
-              fluid={edge.node.childMarkdownRemark.featuredImg.childImageSharp.fluid}
+              fluid={
+                edge.node.childMarkdownRemark.featuredImg.childImageSharp.fluid
+              }
               alt={edge.node.childMarkdownRemark.frontmatter.featuredImgAlt}
               className="absolute object-cover top-0 left-0 w-full h-full"
               style={{ position: "absolute" }}
