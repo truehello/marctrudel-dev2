@@ -22,3 +22,15 @@ console.log(JSON.stringify(data, null, 2))
 
 ```
 
+### Problem: hard to identify console.log you are looking for among foret of logs
+
+### Solution: Use CSS to style consol output
+
+Add %c before your log message and then add the CSS. This will add css to the console to help the log in question stand out. 
+
+example
+```
+console.log('%c Really Important Message','color:red; background:black, font-size:25px; font-family:cursive; text-shadow: 2px 2px 3px white')
+
+```
+
