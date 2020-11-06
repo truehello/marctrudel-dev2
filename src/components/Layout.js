@@ -8,10 +8,27 @@ import { Header } from "../components/header"
 import Footer from "../components/footer"
 import { defineCustomElements as deckDeckGoHighlightElement } from "@deckdeckgo/highlight-code/dist/loader"
 
-deckDeckGoHighlightElement()
+deckDeckGoHighlightElement()  //sets formating for codeblocks
 
 const duration = 0.5
 
+// const variants = {
+//   initial: {
+//     opacity: 0,
+//   },
+//   enter: {
+//     opacity: 1,
+//     transition: {
+//       duration: duration,
+//       delay: duration,
+//       when: 'beforeChildren',
+//     },
+//   },
+//   exit: {
+//     opacity: 0,
+//     transition: { duration: duration },
+//   },
+// }
 const variants = {
   initial: {
     opacity: 0,
@@ -53,7 +70,7 @@ export const Layout = ({ children, location }) => (
           <Header siteTitle={data.site.siteMetadata.title} />
 
           <div className="container w-full md:max-w-3xl mx-auto pt-20 px-4 lg:px-0 flex-grow">
-            <AnimatePresence>
+            <AnimatePresence exitBeforeEnter>
               <motion.main
                 key={location.pathname}
                 variants={variants}
