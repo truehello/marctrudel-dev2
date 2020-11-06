@@ -3,8 +3,6 @@ import { motion, AnimatePresence } from "framer-motion"
 import { useStaticQuery, graphql, Link } from "gatsby"
 import Img from "gatsby-image"
 
-<<<<<<< HEAD
-=======
 const container = {
   initial: { y: 20, opacity: 0 },
   animate: {
@@ -29,7 +27,6 @@ const item = {
   exit:{opacity:0, y:20}
 };
 
->>>>>>> framer
 
 const ArticlesList = () => {
   const data = useStaticQuery(graphql`
