@@ -1,14 +1,56 @@
 import React from "react"
+import { motion, AnimatePresence } from "framer-motion"
 
-//import Layout from "../components/Layout"
 import ContactForm from "../components/contactForm.component"
 
+const container = {
+  initial: { y: 20, opacity: 0 },
+  animate: {
+  y: 0,
+  opacity: 1,
+  transition: {
+  delay:0.75,
+    when: "beforeChildren",
+    staggerChildren: 0.3,
+    staggerDelay:0.2
+  },
+},
+exit:{opacity:0}
+};
+
+const item = {
+  initial: { y: 20, opacity: 0 },
+  animate: {
+    y: 0,
+    opacity: 1,
+  },
+  exit:{opacity:0, y:20}
+};
+
+const h1Variant = {
+  initial:{ opacity: 0, y: -200 },
+  animate:{ 
+      opacity: 1, 
+      y:0 ,
+      transition: {
+          delay: 0.75,
+      },
+  },
+   exit:{ opacity: 0 , y: -200}
+};
+
+
 const Home = () => (
- <>
-    <h1 className="text-2xl md:text-4xl">
+  <AnimatePresence  exitBeforeEnter>
+    <motion.h1
+    variants={h1Variant}
+    initial="initial"
+    animate="animate"
+    exit="exit"
+     className="text-2xl md:text-4xl">
       I am a full-stack developer and designer in Victoria, British Columbia,
       Canada.
-    </h1>
+    </motion.h1>
     <p>
       I spend my time on software architecture, user experience, and product
       development. Currently working at{" "}
@@ -24,8 +66,14 @@ const Home = () => (
 
     <h2 className="py-10 text-center md:text-left">Projects</h2>
 
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
-      <div className="flex flex-col justify-between p-6 rounded-md h-64 max-w-md relative overflow-hidden m-4 shadow-md hover:shadow-xl no-underline bg-gray-500 transition-shadow duration-300">
+    <motion.div 
+      variants={container}
+      initial="initial"
+      animate="animate"
+      exit="exit"
+       className="grid grid-cols-1 md:grid-cols-2 gap-2">
+    <motion.div variants={item} whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }} key="project1"
+      className="flex flex-col justify-between p-6 rounded-md h-64 max-w-md relative overflow-hidden m-4 shadow-md no-underline">
         <img
           src="https://source.unsplash.com/featured/500?space,background"
           alt="React News"
@@ -63,9 +111,10 @@ const Home = () => (
             </span>
           </a>
         </div>
-      </div>
+      </motion.div>
 
-      <div className="flex flex-col justify-between p-6 rounded-md h-64 max-w-md relative overflow-hidden m-4 shadow-md hover:shadow-xl no-underline bg-gray-500 transition-shadow duration-300">
+      <motion.div variants={item} whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }} key="project2"
+      className="flex flex-col justify-between p-6 rounded-md h-64 max-w-md relative overflow-hidden m-4 shadow-md no-underline">
         <img
           src="https://source.unsplash.com/featured/502?space,background"
           alt="Unsplash App"
@@ -103,12 +152,12 @@ const Home = () => (
             </span>
           </a>
         </div>
-      </div>
-    </div>
+      </motion.div>
+    </motion.div>
 
     <h2 className="py-10 text-center md:text-left">Get In Touch</h2>
       <ContactForm />
- </>
+ </AnimatePresence>
 )
 
 export default Home

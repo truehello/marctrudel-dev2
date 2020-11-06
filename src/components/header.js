@@ -53,7 +53,7 @@ export const Header = ({ siteTitle }) => {
                     About
                   </Link>
                 </li>
-                
+
                 <li className="lg:mr-3">
                   <Link
                     className="inline-block no-underline hover:text-underline py-2 px-4"
