@@ -1,7 +1,7 @@
 ---
 title: Using Custom Fonts with TailwindCSS and Gatsby
 description: Tip about using custom fonts in Gatsby with tailwindcss
-featuredImgURL: https://source.unsplash.com/featured/?space,pluto
+featuredImgURL: https://source.unsplash.com/featured/?space,saturn
 featuredImgAlt: tailwind custom fonts in gatsby
 slug: tailwind-gatsby-custom-fonts
 keywords: Tailwind CSS Gatsby
@@ -54,6 +54,7 @@ module.exports = {
 
 ## Credits
 [Scott Watermasysk](https://scottw.com/blog/google-font-tailwind/) 
+
 [Font Source](https://github.com/fontsource/fontsource) 
 
 
